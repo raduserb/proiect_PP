@@ -1,0 +1,47 @@
+--task1
+
+find_column primeste un tabel si numele unei coloane si intoarce indicele coloanei respective
+
+transform to int transforma din string in int
+
+myCompareStrings compara elemetele de pe prima coloana
+
+myCompareInt compara componentele de pe coloana primita ca parametru i, iar in caz de egalitate compara dupa prima coloana
+
+tsort face efectiv sortarea ceruta, folosindu-ne de functiile de mai sus
+
+--task2 
+
+vunuion e destul de self explaining
+
+--task3
+
+zipWithPadding primeste 2 tabele si 2 intregi care reprezinta dimensiunuile paddingului practic (cei doi intregi sunt nr de coloane)
+concateneaza linii pe rand din cele 2 tabele pana cand s etermina unul din ele. Pe urma, se face padding cu "" de atatea ori cu cate coloane erau in tabelul ce s-a terminat.
+
+hunion apeleaza corspunzator functia de mai sus
+
+--task4
+
+naiba stie ce trebuia facut aici
+
+--task5
+
+cartesian_line primeste o functie o linie si un tabel si aplica functia respectiva intre linia primita ca parametru si toate liniile, pe rand,
+din tabeul primit ca parametru
+
+cartesian_no_name face produsul caterzian intre fiecare linie a primului tabel si toate liniile pe rand din al doilea tabel
+
+cartesian adauga si numele corespunzator 
+
+--task6
+
+projection_simple primeste un intreg si un tabel si intoarce un tabel cu toate elementele de pe coloana i
+
+projection uneste toate tabelele gasite de projection simple din lista de nume primite ca parametru
+
+--task7
+
+filterTable_simple primeste o functie, un intreg si un tabel si intoarce tabelul format din liniile in care al i-lea element indeplinsete conditia data de functia primita param.
+
+filterTable adauga numele coloanelor si apleleaza filterTable_simple transformand numele coloanei intr un intreg
