@@ -1,3 +1,85 @@
+Taskset 1
+
+--task 1
+
+process line ia o linie din tabel, pastreaza primul element (numele)
+si calculeaza media numarului de pasi pe cele 8 ore, pe care o transforma in String
+
+compute_average_steps aplica un map pe tabel cu 
+functia process line si obtinem astfel tabelul dorit
+
+--task 2
+
+get_total_steps_person primeste o linie si intoarce suma pasilor persoanei respective
+
+get_passed_people_num primeste tabelul, calculeaza numarul total de pasi pt fiecare pers folosind functia anterioara
+si intoarce nr persoanelor care au facut mai mult de 1000 de pasi
+
+get_passed_people_percentage ia un tabel si intoarce procentul persoanelor care au facut 1000
+de pasi (imparte numarul pers care au facut pasii la numarul total de persoane)
+
+get_total_steps calculeaza nr total al pasilor tuturor persoanelor
+
+get_steps_avg calculeaza numarul average de pasi pe zi (impartind rez functiei anterioare la numarul persoanelor)
+
+--task 3
+
+sum_columns face suma pe coloane a pasilor
+
+get_avg_steps_per_h imparte fiecare suma a pasilor la numarul de persoane
+
+--task4
+
+get_very_active_minutes_list intoarce o liste cu numarul de minute in care fiecare persoana a fost foarte activ
+asemanator cu fairly active si lightly active
+
+get_active_minutes ia o lista de activitate si intoarce o lista cu 3 elemente
+primul element este numarul persoanelor care au avut o activitate mai mica de 50 de pasi
+al doilea e nr pers care au facut intre 50 si 100
+al treilea este nr pers care au facut peste 100
+
+transform_to_row ia o lista de intregi si o transforma intr o lista de strings (row)
+
+return_very_active_minutes ia un tabel si aplica functia get_active_minutes
+pe get_very_active_minutes_list
+asemena pt fairly actve si lightly active
+get_activ_summary pune rezultatele anterioare intr un tabel
+
+--task 5
+
+folosim sortby care primeste 2 linii de tabel, compara numarul de pasi,
+iar in cazul in care sunt egali, sorteaza dupa nume, in caz contrar pastreaza sortarea dupa pasi.
+
+
+--task 6
+
+process_line_first_4h ia o linie din tabel si intoarce o inie in care pastreaza 
+numele pe prima coloana iar pe a doua suma pasilor din primele 4h
+
+asemenea pt ultimele 4h
+
+compute_average_steps_4h pune intr un sg tabel rezultatul process_line_first_4h
+si process_line_last_4h aplicate pe fiecare linie din tabel
+
+compute_difference face diferenta intre primele 4h si ult 4h dintr o linie
+
+compute_average_steps_4h_difference adauga si diferenta pasilor in tabel
+
+get_steps_diff_table adauga prima linie si face sortarea corespunzator (asemanator cu tak 5)
+
+--task 7
+
+vmap ia o functie si face map pt a o aplica fiecarei linii, urmat de inca un map pt a alica functia fiecarui element
+
+--task 8
+
+rmap primeste o functie pe care o aplica fiecarei linii si care se alipeste la lista de stringuri primita ca parametru
+
+get_sleep_total intoarce o lista cu primul element numele persoanei
+iar al doilea suma minutelor dormite de persoana respectiva
+
+Taskset 2
+
 --task1
 
 find_column primeste un tabel si numele unei coloane si intoarce indicele coloanei respective
